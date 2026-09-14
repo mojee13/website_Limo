@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limo — Technology Studio | Italy & Global</title>
+  <meta name="description" content="Limo is a six-person technology team based in Italy and working globally. We help traditional businesses grow with websites, apps, and AI.">
+  
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:title" content="Limo — Technology Studio">
+  <meta property="og:description" content="We help traditional businesses grow with websites, apps, and AI. Based in Italy. Working globally.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/logo.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="alternate icon" href="./favicon.ico">
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Header
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Limo Studio Home">
+        <img src="./assets/images/logo-icon.svg" alt="Limo logo" width="38" height="38">
+        <span data-i18n="brandName">limo</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#services" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="#team" class="nav-link" data-i18n="navTeam">Team</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+
+        <!-- Language Selector Dropdown -->
+        <div class="lang-selector">
+          <button class="lang-btn" id="lang-btn" aria-expanded="false" aria-haspopup="true" aria-label="Select Language">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span id="lang-btn-text">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          
+          <div class="lang-dropdown" id="lang-dropdown" role="menu">
+            <button class="lang-option" data-lang="en" role="menuitem">English</button>
+            <button class="lang-option" data-lang="fa" role="menuitem">فارسی</button>
+            <button class="lang-option" data-lang="it" role="menuitem">Italiano</button>
+            <button class="lang-option" data-lang="tr" role="menuitem">Türkçe</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="#services" class="mobile-nav-link" data-i18n="navServices">Services</a>
+      <a href="#team" class="mobile-nav-link" data-i18n="navTeam">Team</a>
+      <a href="#contact" class="mobile-nav-link" data-i18n="navContact">Contact</a>
+    </div>
+
+    <div>
+      <p style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.75rem;">Language</p>
+      <div class="mobile-lang-grid">
+        <button class="btn btn-secondary lang-option" data-lang="en">English</button>
+        <button class="btn btn-secondary lang-option" data-lang="fa">فارسی</button>
+        <button class="btn btn-secondary lang-option" data-lang="it">Italiano</button>
+        <button class="btn btn-secondary lang-option" data-lang="tr">Türkçe</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       Main Content
+       ========================================================================= -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy Left Column -->
+          <div class="reveal active">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span data-i18n="heroBadge">Based in Italy. Working globally.</span>
+            </div>
+
+            <h1 class="hero-headline" data-i18n="heroTitle">
+              Fresh thinking.<br>Smarter business.
+            </h1>
+
+            <p class="hero-subheadline" data-i18n="heroSubhead">
+              We help traditional businesses grow with websites, apps, and AI.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#team" class="btn btn-primary" data-i18n="heroCtaPrimary">
+                Meet the team
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="heroCtaSecondary">Let's talk</a>
+            </div>
+          </div>
+
+          <!-- Hero Animated Visual Right Column -->
+          <div class="reveal active">
+            <div class="hero-visual">
+              <div class="hero-graphic-card">
+                <svg class="hero-svg-anim" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Subtle Background Grid -->
+                  <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(26,28,30,0.04)" stroke-width="1"/>
+                  </pattern>
+                  <rect width="400" height="400" fill="url(#gridPattern)"/>
+
+                  <!-- Connecting Lemon-curved Paths -->
+                  <path d="M 80 280 C 140 280, 150 160, 200 160 C 250 160, 260 80, 320 80" stroke="#FACC15" stroke-width="3" stroke-linecap="round" class="line-flow"/>
+                  <path d="M 80 320 C 180 320, 160 220, 240 220 C 300 220, 280 140, 320 140" stroke="#EAB308" stroke-width="2" stroke-dasharray="4 4"/>
+                  <path d="M 80 240 Q 200 200, 320 280" stroke="#3E6B45" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+                  <!-- Nodes: Traditional Business Node (Bottom Left) -->
+                  <g transform="translate(80, 280)">
+                    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="#1C1E21"/>
+                    <!-- Classic Building / Matrix Icon -->
+                    <path d="M -12 10 L -12 -10 L 0 -18 L 12 -10 L 12 10 Z" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+                    <rect x="-6" y="-2" width="4" height="4" fill="#EAB308"/>
+                    <rect x="2" y="-2" width="4" height="4" fill="#EAB308"/>
+                  </g>
+
+                  <!-- Digital Hub Node (Center) -->
+                  <g transform="translate(200, 160)">
+                    <circle cx="0" cy="0" r="28" fill="#FAF8F5" stroke="#EAB308" stroke-width="4"/>
+                    <circle cx="0" cy="0" r="14" fill="#EAB308" class="node-pulse"/>
+                    <!-- Lemon Icon silhouette center -->
+                    <path d="M -4 -4 C -2 -8, 4 -8, 6 -4 C 8 0, 4 6, 0 6 C -4 6, -6 0, -4 -4 Z" fill="#1C1E21"/>
+                  </g>
+
+                  <!-- Connected Global Ecosystem Nodes (Top Right & Right) -->
+                  <g transform="translate(320, 80)">
+                    <circle cx="0" cy="0" r="22" fill="#3E6B45"/>
+                    <!-- Cloud / Web Icon -->
+                    <path d="M -8 2 C -10 2, -12 0, -10 -4 C -8 -8, -2 -8, 0 -5 C 2 -7, 8 -6, 8 -2 C 10 -2, 10 2, 8 2 Z" fill="#FFFFFF"/>
+                  </g>
+
+                  <g transform="translate(320, 280)">
+                    <circle cx="0" cy="0" r="22" fill="#EAB308" class="node-pulse-delayed"/>
+                    <!-- AI / Spark Icon -->
+                    <path d="M 0 -8 L 2 -2 L 8 0 L 2 2 L 0 8 L -2 2 L -8 0 L -2 -2 Z" fill="#1C1E21"/>
+                  </g>
+
+                  <!-- Data Flow Dots -->
+                  <circle cx="140" cy="220" r="5" fill="#EAB308"/>
+                  <circle cx="260" cy="120" r="5" fill="#3E6B45"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2. SERVICES SECTION -->
+    <section class="section" id="services">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="servicesTag">Capabilities</span>
+          <h2 class="section-title" data-i18n="servicesTitle">What we do</h2>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">Engineering modern digital tools tailored for growth and global efficiency.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service Card 1 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <!-- Web & Commerce SVG Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service1Title">Web & Digital Commerce</h3>
+            <p class="service-desc" data-i18n="service1Desc">Websites, online stores, and digital business tools.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <!-- AI & Automation SVG Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                <path d="M12 12L2.5 7.5"></path>
+                <path d="M12 12v10"></path>
+                <circle cx="12" cy="12" r="3" fill="var(--lemon-accent)"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service2Title">AI & Automation</h3>
+            <p class="service-desc" data-i18n="service2Desc">AI-powered features, computer vision, and workflow automation.</p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <!-- Apps & Games SVG Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service3Title">Apps & Games</h3>
+            <p class="service-desc" data-i18n="service3Desc">Mobile apps, software applications, and interactive games.</p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card reveal">
+            <div class="service-icon-wrapper">
+              <!-- Data & Intelligence SVG Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service4Title">Data & Intelligence</h3>
+            <p class="service-desc" data-i18n="service4Desc">Data analysis, machine learning, and deep learning.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. TEAM SECTION -->
+    <section class="section" id="team" style="background-color: rgba(244, 241, 234, 0.4);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="teamTag">People</span>
+          <h2 class="section-title" data-i18n="teamTitle">The team</h2>
+          <p class="section-subtitle" data-i18n="teamSubtitle">A six-person technology studio combining research rigor with modern product design.</p>
+        </div>
+
+        <div class="team-grid">
+          
+          <!-- Team Card 1: Mojtaba Roshana -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/mojtaba.svg" alt="Mojtaba Roshana" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team1Name">Mojtaba Roshana</h3>
+            <span class="team-role" data-i18n="team1Role">AI & Data Science Lead</span>
+            <p class="team-bio" data-i18n="team1Bio">Specialized in complex systems, data science, and machine learning architectures.</p>
+            <a href="https://www.linkedin.com/in/mojtabaroshana/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+          <!-- Team Card 2: Amin Almasi -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/amin.svg" alt="Amin Almasi" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team2Name">Amin Almasi</h3>
+            <span class="team-role" data-i18n="team2Role">Full-Stack & Engineering Lead</span>
+            <p class="team-bio" data-i18n="team2Bio">Architecting robust web platforms and scalable software infrastructure.</p>
+            <a href="https://www.linkedin.com/in/amin-a-7578631b7/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+          <!-- Team Card 3: Ramtin Kivi -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/ramtin.svg" alt="Ramtin Kivi" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team3Name">Ramtin Kivi</h3>
+            <span class="team-role" data-i18n="team3Role">AI & Software Developer</span>
+            <p class="team-bio" data-i18n="team3Bio">Building intelligent algorithms and computational software solutions.</p>
+            <a href="https://www.linkedin.com/in/ramtin-kivi/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+          <!-- Team Card 4: Parisa Foroozandenejad -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/parisa.svg" alt="Parisa Foroozandenejad" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team4Name">Parisa Foroozandenejad</h3>
+            <span class="team-role" data-i18n="team4Role">UX/UI & Frontend Specialist</span>
+            <p class="team-bio" data-i18n="team4Bio">Designing intuitive user experiences and crafting polished frontend interfaces.</p>
+            <a href="https://www.linkedin.com/in/parisa-foroozandenejad/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+          <!-- Team Card 5: Roya Joulaei -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/roya.svg" alt="Roya Joulaei" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team5Name">Roya Joulaei</h3>
+            <span class="team-role" data-i18n="team5Role">Data Scientist & AI Specialist</span>
+            <p class="team-bio" data-i18n="team5Bio">Extracting deep insights from complex data networks and machine learning models.</p>
+            <a href="https://www.linkedin.com/in/roya-joulaei/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+          <!-- Team Card 6: Taha Enayat -->
+          <div class="team-card reveal">
+            <div class="team-avatar-frame">
+              <img src="./assets/images/team/taha.svg" alt="Taha Enayat" class="team-avatar-img" loading="lazy">
+            </div>
+            <h3 class="team-name" data-i18n="team6Name">Taha Enayat</h3>
+            <span class="team-role" data-i18n="team6Role">Machine Learning & Software Engineer</span>
+            <p class="team-bio" data-i18n="team6Bio">Researching advanced ML models and engineering reliable software systems.</p>
+            <a href="https://www.linkedin.com/in/taha-enayat/" target="_blank" rel="noopener noreferrer" class="team-linkedin">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              <span data-i18n="teamLinkedInBtn">LinkedIn Profile</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. CONTACT & CALLOUT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <span class="section-tag" data-i18n="contactTag">Get in Touch</span>
+          <h2 class="contact-title" data-i18n="contactTitle">Let’s build your next chapter.</h2>
+          <p class="contact-desc" data-i18n="contactSubtitle">
+            Ready to modernize your business or build a transformative digital product? Reach out to our studio today.
+          </p>
+
+          <div class="contact-actions">
+            <div class="email-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span id="email-display">hello@limo.studio</span>
+              <button class="copy-btn" id="copy-email-btn" data-i18n="copyEmail">Copy email</button>
+            </div>
+            
+            <a href="mailto:hello@limo.studio" class="btn btn-primary" id="direct-mailto" data-i18n="contactCta">
+              Email us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="brand-logo" style="font-size: 1.15rem;">
+        <img src="./assets/images/logo-icon.svg" alt="Limo logo" width="30" height="30">
+        <span data-i18n="brandName">limo</span>
+      </div>
+
+      <div class="footer-copy">
+        <span data-i18n="footerText">Limo · Based in Italy. Working globally.</span>
+      </div>
+
+      <div class="footer-tagline" data-i18n="footerRights">
+        © All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/translations.js"></script>
+  <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

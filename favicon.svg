@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" fill="none">
+  <defs>
+    <linearGradient id="lemonFav" x1="15%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+  </defs>
+  <path d="M 78 20 C 85 14, 89 22, 82 28 C 72 46, 68 76, 40 83 C 24 86, 14 74, 20 58 C 28 30, 58 26, 78 20 Z" fill="url(#lemonFav)" />
+  <path d="M 74 17 C 69 7, 81 4, 88 11 C 82 17, 77 19, 74 17 Z" fill="#3E6B45" />
+  <path d="M 38 35 C 36 45, 36 58, 36 64 C 36 66, 38 68, 42 68 L 58 68 C 62 68, 62 73, 57 73 L 38 73 C 31 73, 30 67, 30 62 L 30 38 C 30 32, 36 31, 38 35 Z" fill="#1C1E21" opacity="0.9" />
+</svg>
