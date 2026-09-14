@@ -4,8 +4,8 @@
    ========================================================================== */
 
 const LIMO_CONFIG = {
-  // Required Pre-publication Item: Update contact email address
-  contactEmail: "hello@limo.studio", // Editable placeholder
+  // Studio Contact Email Address
+  contactEmail: "limo.tech.studio@gmail.com",
 
   // Team profiles configuration
   team: [

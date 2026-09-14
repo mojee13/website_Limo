@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ------------------------------------------------------------------------ */
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      const email = typeof LIMO_CONFIG !== 'undefined' ? LIMO_CONFIG.contactEmail : "hello@limo.studio";
+      const email = typeof LIMO_CONFIG !== 'undefined' ? LIMO_CONFIG.contactEmail : "limo.tech.studio@gmail.com";
       navigator.clipboard.writeText(email).then(() => {
         const originalText = copyEmailBtn.textContent;
         const copiedMsg = TRANSLATIONS[currentLang]?.copied || "Copied!";
